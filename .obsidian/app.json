@@ -1,0 +1,8 @@
+{
+  "attachmentFolderPath": "docs/images/posts",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "docs",
+  "useMarkdownLinks": true,
+  "showUnsupportedFiles": true,
+  "newLinkFormat": "relative"
+}

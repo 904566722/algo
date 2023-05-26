@@ -1,0 +1,82 @@
+site_name: HHQ算法笔记
+theme:
+  name: material
+#  font:
+#    code: Roboto Mono
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+      primary: green  # 标题、侧边栏、文本链接的颜色
+      accent: red # 交互元素、悬停链接、按钮、滚动条
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+#      primary: green  # 标题、侧边栏、文本链接的颜色
+      accent: red # 交互元素、悬停链接、按钮、滚动条
+
+
+#  logo: assets/img/zoro.png
+  favicon: images/posts/zoro.png
+  features:
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+#    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+#    - navigation.indexes
+
+#nav:
+#  - Blog:
+#      - blog/index.md
+
+repo_url: https://github.com/squidfunk/mkdocs-material
+repo_name: squidfunk/mkdocs-material
+
+plugins:
+  - search:
+      lang:
+        - en
+#  - blog:
+#      enabled: !ENV [CI, false]
+#      blog_dir: .
+#      blog_toc: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - footnotes
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
