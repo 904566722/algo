@@ -38,8 +38,8 @@ theme:
 #  - Blog:
 #      - blog/index.md
 
-repo_url: https://github.com/squidfunk/mkdocs-material
-repo_name: squidfunk/mkdocs-material
+repo_url: https://github.com/904566722/algo
+repo_name: 904566722/algo
 
 plugins:
   - search:
