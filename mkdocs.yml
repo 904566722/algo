@@ -8,7 +8,7 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-      primary: green  # 标题、侧边栏、文本链接的颜色
+      primary: red  # 标题、侧边栏、文本链接的颜色
       accent: red # 交互元素、悬停链接、按钮、滚动条
     - scheme: slate
       toggle:
