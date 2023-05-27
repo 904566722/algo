@@ -3,7 +3,7 @@ package simple_and_midium
 func findErrorNums(nums []int) []int {
 	n := len(nums)
 	mp := make(map[int]int)
-	for i, _ := range nums {
+	for i := range nums {
 		mp[i+1] = -1
 	}
 	rst := make([]int, 2)

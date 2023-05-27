@@ -16,7 +16,7 @@ func imageSmoother(img [][]int) [][]int {
 	for row, line := range img {
 		rstLine := make([]int, len(line))
 		rst = append(rst, rstLine)
-		for col, _ := range line {
+		for col := range line {
 			sum := 0
 			cnt := 0
 			for _, nb := range nbs {

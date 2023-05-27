@@ -23,7 +23,7 @@ func findTarget(root *TreeNode, k int) bool {
 	}
 	dfs(root)
 
-	for val, _ := range valAppeared {
+	for val := range valAppeared {
 		if valAppeared[k-val] && k-val != val {
 			return true
 		}

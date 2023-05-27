@@ -54,7 +54,3 @@ func Test_commonChars(t *testing.T) {
 		})
 	}
 }
-
-func Test_codingP(t *testing.T) {
-	codingP()
-}
