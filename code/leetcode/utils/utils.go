@@ -1,18 +1,13 @@
 package utils
 
-import "math"
-
-func Max(nums ...int) int {
-	rst := math.MinInt
-	for _, v := range nums {
-		if rst < v {
-			rst = v
-		}
+func Max(a, b int) int {
+	if a < b {
+		return b
 	}
-	return rst
+	return a
 }
 
-func min(a, b int) int {
+func Min(a, b int) int {
 	if a < b {
 		return a
 	}
